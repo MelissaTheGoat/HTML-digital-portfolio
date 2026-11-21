@@ -1,12 +1,14 @@
 /*/////////////////////////////////////
 //               Imports             //
 /////////////////////////////////////*/
+/*We import other css files here so we only need link to one css file*/
 @import url("navbar.css");
 @import url("footer.css");
 
 /*/////////////////////////////////////
 //                                   //
 /////////////////////////////////////*/
+/*These specific changes make the footer stay at the bottom*/
 body {
     min-height: 100vh;
     display: flex;
