@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kontakt Mac Flink</title>
+    <meta
+      name="description"
+      content="Kontakta Mac Flink via e-post, LinkedIn, GitHub eller kontaktformuläret."
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <!--Imports the header-->
+    <header id="site-header"></header>
+
+    <main class="contact">
+      <h1 class="contact__heading">Kontakta mig</h1>
+
+      <section class="contact__links" aria-label="Kontaktvägar och profiler">
+        <h2 class="contact__subheading">Kontaktuppgifter och länkar</h2>
+        <ul class="contact__list">
+          <li class="contact__item">
+            <a class="contact__link" href="mailto:mrx@hotmale.com"
+              >Skicka e-post till Mac Flink</a
+            >
+          </li>
+          <li class="contact__item">
+            <a
+              class="contact__link"
+              href="https://www.linkedin.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Mac Flink på LinkedIn</a
+            >
+          </li>
+          <li class="contact__item">
+            <a
+              class="contact__link"
+              href="https://github.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Mac Flink på GitHub</a
+            >
+          </li>
+        </ul>
+      </section>
+
+      <section class="contact__form-section">
+        <h2 class="contact__subheading">Skicka ett meddelande</h2>
+
+        <form class="contact-form" action="tack.php" method="post">
+          <div class="contact-form__group">
+            <label class="contact-form__label" for="name">Namn:</label>
+            <input
+              class="contact-form__input"
+              type="text"
+              id="name"
+              name="name"
+              required
+            />
+          </div>
+
+          <br />
+
+          <div class="contact-form__group">
+            <label class="contact-form__label" for="email">E-post:</label>
+            <input
+              class="contact-form__input"
+              type="email"
+              id="email"
+              name="email"
+              required
+            />
+          </div>
+          <br />
+
+          <div class="contact-form__group">
+            <label class="contact-form__label" for="subject">Ämne:</label>
+            <select class="contact-form__select" id="subject" name="choice">
+              <option value="kurs">Fråga om Tai Chi-kurs</option>
+              <option value="samarbete">Samarbete eller uppdrag</option>
+              <option value="ovrigt">Övrigt</option>
+            </select>
+          </div>
+          <br />
+
+          <fieldset class="contact-form__fieldset">
+            <legend class="contact-form__legend">
+              Hur vill du bli kontaktad?
+            </legend>
+
+            <label class="contact-form__radio-label" for="reply-email">
+              <input
+                class="contact-form__radio"
+                type="radio"
+                id="reply-email"
+                name="reply_method"
+                value="E-post"
+                checked
+              />
+              Via e-post
+            </label>
+
+            <label class="contact-form__radio-label" for="reply-phone">
+              <input
+                class="contact-form__radio"
+                type="radio"
+                id="reply-phone"
+                name="reply_method"
+                value="Telefon"
+              />
+              Via telefon
+            </label>
+          </fieldset>
+          <br />
+
+          <label class="contact-form__label" for="message">Meddelande:</label>
+
+          <div class="contact-form__group">
+            <textarea
+              class="contact-form__textarea"
+              id="message"
+              name="message"
+              rows="5"
+              required
+            ></textarea>
+          </div>
+
+          <button class="contact-form__button" type="submit">Skicka</button>
+        </form>
+      </section>
+    </main>
+
+    <!--Imports the footer-->
+    <footer class="footer" id="site-footer"></footer>
+  </body>
+</html>
