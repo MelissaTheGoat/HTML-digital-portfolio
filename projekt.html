@@ -4,171 +4,135 @@
 <head>
     <meta charset="UTF-8">
 
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Projekt - Mac Flink</title>
 
-    <meta
-        name="description"
-        content="Projekt utförda av Tai Chi-instruktören Mac Flink">
+    <meta name="description" content="Projekt utförda av Tai Chi-instruktören Mac Flink">
 
     <link rel="stylesheet" href="css/style.css">
 
-  <script src="script.js" defer></script>
+    <script src="script.js" defer></script>
 
 </head>
 
 <body>
 
     <header class="header">
+        <!--Imports the header-->
+        <header id="site-header"></header>
 
-    <h1 class="header__title">
-        Projekt
-    </h1>
+        <h1 class="header__title">
+            Projekt
+        </h1>
 
-     <nav class="navigation" aria-label="Huvudmeny">
+        
 
-        <ul class="navigation__list">
-
-            <li class="navigation__item">
-                <a class="navigation__link" href="index.html">Om mig</a>
-            </li>
-
-            <li class="navigation__item">
-                <a class="navigation__link navigation__link--active" href="projekt.html">Projekt</a>
-            </li>
-
-            <li class="navigation__item">
-                <a class="navigation__link" href="intresse.html">Intressen</a>
-            </li>
-
-            <li class="navigation__item">
-                <a class="navigation__link" href="kontakts.html">Kontakt</a>
-            </li>
-
-        </ul>
-
-    </nav>
-
-</header>
+    </header>
 
 
-<main>
+    <main>
 
-    <section class="projects">
+        <section class="projects">
 
-        <h2 class="projects__title">Mina projekt</h2>
+            <h2 class="projects__title">Mina projekt</h2>
 
-        <article class="project-card">
+            <article class="project-card">
 
-            <h3 class="project-card__title">
-                Tai Chi för seniorer
-            </h3>
+                <h3 class="project-card__title">
+                    Tai Chi för seniorer
+                </h3>
 
-            <figure class="project-card__figure">
+                <figure class="project-card__figure">
 
-    <img
-        class="project-card__image"
-        src="images/seniorer.jpg"
-        alt="Seniorer som tränar Tai Chi tillsammans">
+                    <img class="project-card__image" src="images/seniorer.jpg"
+                        alt="Seniorer som tränar Tai Chi tillsammans">
 
-    <figcaption class="project-card__caption">
-        Tai Chi-träning för seniorer.
-    </figcaption>
+                    <figcaption class="project-card__caption">
+                        Tai Chi-träning för seniorer.
+                    </figcaption>
 
-</figure>
+                </figure>
 
-            <p class="project-card__text">
-                Ett projekt som hjälper äldre människor
-                att förbättra balans genom
-                regelbundna Tai Chi-lektioner.
+                <p class="project-card__text">
+                    Ett projekt som hjälper äldre människor
+                    att förbättra balans genom
+                    regelbundna Tai Chi-lektioner.
+                </p>
+
+            </article>
+
+            <article class="project-card">
+
+                <h3 class="project-card__title">
+                    Tai Chi i parken
+                </h3>
+
+                <figure class="project-card__figure">
+
+                    <img class="project-card__image" src="images/parken.jpg"
+                        alt="Personer som tränar Tai Chi i en park">
+
+                    <figcaption class="project-card__caption">
+                        Tai Chi i parken.
+                    </figcaption>
+
+                </figure>
+
+                <p class="project-card__text">
+                    Utomhuslektioner i lokala parker där
+                    deltagarna oavsett ålder kan träna Tai Chi i naturen.
+                </p>
+
+            </article>
+
+            <article class="project-card">
+
+                <h3 class="project-card__title">
+                    Stresshantering för högskolan
+                </h3>
+
+                <figure class="project-card__figure">
+
+                    <img class="project-card__image" src="images/stresshantering.jpg"
+                        alt="Studenter som lär sig Tai Chi för att minska stress">
+
+                    <figcaption class="project-card__caption">
+                        Tai Chi för stresshantering.
+                    </figcaption>
+
+                </figure>
+
+                <p class="project-card__text">
+                    Workshops för högskolan där studenter lär sig
+                    enkla Tai Chi-övningar för att minska stress.
+                </p>
+
+            </article>
+
+            <!-- JS: Visar information om projektet -->
+
+            <button type="button" class="projects__button" data-js-action="show-project"
+                data-project="Tai Chi för seniorer">
+
+                Visa projektinformation
+
+            </button>
+
+            <p class="projects__result" data-js-target="project-output" aria-live="polite">
             </p>
 
-        </article>
+        </section>
 
-        <article class="project-card">
+    </main>
 
-            <h3 class="project-card__title">
-                Tai Chi i parken
-            </h3>
+    <footer class="footer">
 
-            <figure class="project-card__figure">
+        <p class="footer__text">
+            © 2026 Mac Flink
+        </p>
 
-    <img
-        class="project-card__image"
-        src="images/parken.jpg"
-        alt="Personer som tränar Tai Chi i en park">
-
-    <figcaption class="project-card__caption">
-        Tai Chi i parken.
-    </figcaption>
-
-</figure>
-
-            <p class="project-card__text">
-                Utomhuslektioner i lokala parker där
-                deltagarna oavsett ålder kan träna Tai Chi i naturen.
-            </p>
-
-        </article>
-
-        <article class="project-card">
-
-            <h3 class="project-card__title">
-                Stresshantering för högskolan
-            </h3>
-
-            <figure class="project-card__figure">
-
-    <img
-        class="project-card__image"
-        src="images/stresshantering.jpg"
-        alt="Studenter som lär sig Tai Chi för att minska stress">
-
-    <figcaption class="project-card__caption">
-        Tai Chi för stresshantering.
-    </figcaption>
-
-</figure>
-
-            <p class="project-card__text">
-                Workshops för högskolan där studenter lär sig
-                enkla Tai Chi-övningar för att minska stress.
-            </p>
-
-        </article>
-
-        <!-- JS: Visar information om projektet -->
-
-<button
-    type="button"
-    class="projects__button"
-    data-js-action="show-project"
-    data-project="Tai Chi för seniorer">
-
-    Visa projektinformation
-
-</button>
-
-<p
-    class="projects__result"
-    data-js-target="project-output"
-    aria-live="polite">
-</p>
-
-    </section>
-
-</main>
-
-<footer class="footer">
-
-    <p class="footer__text">
-        © 2026 Mac Flink
-    </p>
-
-</footer>
+    </footer>
 </body>
 
 </html>
